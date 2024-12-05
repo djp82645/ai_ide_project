@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Amazon Product Scraper</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <script src="lib/xlsx.full.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h2>Amazon Product Scraper</h2>
+    <div class="input-group">
+      <input type="text" id="keyword" placeholder="Enter search keyword">
+      <button id="scrapeButton">Scrape Products</button>
+    </div>
+    <div class="status" id="status"></div>
+    <div class="results" id="results">
+      <table id="resultsTable" style="display: none;">
+        <thead>
+          <tr>
+            <th>Title</th>
+            <th>Price</th>
+            <th>Rating</th>
+            <th>Reviews</th>
+            <th>ASIN</th>
+            <th>URL</th>
+          </tr>
+        </thead>
+        <tbody id="resultsBody"></tbody>
+      </table>
+    </div>
+    <button id="exportButton" style="display: none;">Export to Excel</button>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>

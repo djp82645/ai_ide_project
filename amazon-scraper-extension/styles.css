@@ -1,0 +1,74 @@
+.container {
+  width: 400px;
+  padding: 20px;
+}
+
+h2 {
+  color: #232f3e;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.input-group {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+button {
+  background-color: #ff9900;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #ff8c00;
+}
+
+.status {
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.status.success {
+  background-color: #dff0d8;
+  color: #3c763d;
+}
+
+.status.error {
+  background-color: #f2dede;
+  color: #a94442;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #232f3e;
+  color: white;
+}
+
+#exportButton {
+  margin-top: 20px;
+  width: 100%;
+}

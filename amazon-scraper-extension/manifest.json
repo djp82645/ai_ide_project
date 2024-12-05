@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "Amazon Product Scraper",
+  "version": "1.0",
+  "description": "Automatically scrape Amazon product information based on keywords",
+  "permissions": [
+    "activeTab",
+    "storage",
+    "scripting"
+  ],
+  "host_permissions": [
+    "https://*.amazon.com/*"
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://*.amazon.com/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
